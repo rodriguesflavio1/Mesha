@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Modelos
 {
-    public class Conveniado
+    public class CorretoraVO
     {
-        public int Nome { get; set; }
-        public string Nascimento { get; set; }
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public double Percentual { get; set; }
     }
 }

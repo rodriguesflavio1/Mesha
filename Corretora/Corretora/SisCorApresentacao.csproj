@@ -79,5 +79,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\SisCorBLL.csproj">
+      <Project>{09961dba-a1b3-4365-bf92-b3c78c9f5b82}</Project>
+      <Name>SisCorBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelos\SisCorVO.csproj">
+      <Project>{86d0d943-c7f1-406c-88ee-46269fda9fb2}</Project>
+      <Name>SisCorVO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

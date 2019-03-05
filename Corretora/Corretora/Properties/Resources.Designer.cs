@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Corretora.Properties
+namespace SisCorApresentacao.Properties
 {
 
 

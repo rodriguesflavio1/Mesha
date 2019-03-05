@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelos
 {
-    public class Comissao
+    public class ComissaoVO
     {
         public int Id { get; set; }
         public DateTime DataCarga { get; set; }

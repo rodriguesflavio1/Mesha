@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Modelos
 {
-    public class Corretora
+    public class ParcelaVO
     {
         public int Id { get; set; }
-        public string Nome { get; set; }
-        public double Percentual { get; set; }
+        public double Valor { get; set; }
+        public DateTime Vencimento { get; set; }
+
     }
 }
