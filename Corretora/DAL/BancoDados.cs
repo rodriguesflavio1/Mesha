@@ -410,9 +410,9 @@ namespace SisCorDAL
         /// <param name="sr"></param>
         /// <param name="nomeColuna"></param>
         /// <returns></returns>
-        public static int? IntParaInt(this SqlDataReader sr, string nomeColuna)
+        public static int IntParaInt(this SqlDataReader sr, string nomeColuna)
         {
-            int? retorno = null;
+            int retorno = 0;
 
             try
             {

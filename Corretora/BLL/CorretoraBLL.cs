@@ -19,5 +19,15 @@ namespace SisCorBLL
         {
             return CorretoraRepositorio.ListarCorretora();
         }
+
+        public void AlterarCorretora(CorretoraVO corretora)
+        {
+            CorretoraRepositorio.AlterarCorretora(corretora);
+        }
+
+        public void ExcluirCorretora(CorretoraVO corretora)
+        {
+            CorretoraRepositorio.ExcluirCorretora(corretora);
+        }
     }
 }

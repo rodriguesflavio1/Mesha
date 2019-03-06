@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroConveniado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroConveniado.Designer.cs">
+      <DependentUpon>CadastroConveniado.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroCorretora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastroConveniado.resx">
+      <DependentUpon>CadastroConveniado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroCorretora.resx">
       <DependentUpon>CadastroCorretora.cs</DependentUpon>
     </EmbeddedResource>
