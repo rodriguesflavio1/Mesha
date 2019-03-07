@@ -58,6 +58,12 @@
     <Compile Include="CadastroCorretora.Designer.cs">
       <DependentUpon>CadastroCorretora.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroParcelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroParcelas.Designer.cs">
+      <DependentUpon>CadastroParcelas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CadastroConveniado.resx">

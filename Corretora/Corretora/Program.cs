@@ -16,7 +16,7 @@ namespace SisCorApresentacao
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CadastroCorretora());
+            Application.Run(new CadastroConveniado());
         }
     }
 }

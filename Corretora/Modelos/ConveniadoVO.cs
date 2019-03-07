@@ -8,7 +8,7 @@ namespace Modelos
 {
     public class ConveniadoVO
     {
-        public int Nome { get; set; }
+        public string Nome { get; set; }
         public string Nascimento { get; set; }
     }
 }

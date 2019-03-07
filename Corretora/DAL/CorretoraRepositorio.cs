@@ -11,10 +11,10 @@ namespace SisCorDAL
 {
     public class CorretoraRepositorio
     {
-        public static void InserirCorretora(string nome, double perc) {
+        public static void InserirCorretora(CorretoraVO corretora) {
 
-            SqlParameter spNome = new SqlParameter("@nome", SqlDbType.VarChar,100) { Value = nome };
-            SqlParameter spPercentual = new SqlParameter("@perc", SqlDbType.Float) { Value = perc };
+            SqlParameter spNome = new SqlParameter("@nome", SqlDbType.VarChar,100) { Value = corretora.Nome };
+            SqlParameter spPercentual = new SqlParameter("@perc", SqlDbType.Float) { Value = corretora.Percentual};
           
             using (BancoDados bd = new BancoDados())
             {

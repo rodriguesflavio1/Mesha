@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="BancoDados.cs" />
     <Compile Include="Contexto.cs" />
+    <Compile Include="ConveniadoRepositorio.cs" />
     <Compile Include="CorretoraRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

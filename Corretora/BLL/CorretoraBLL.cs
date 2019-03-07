@@ -10,9 +10,9 @@ namespace SisCorBLL
 {
     public class CorretoraBLL
     {
-        public void InserirCorretora(string _nome,double _perc)
+        public void InserirCorretora(CorretoraVO corretora)
         {
-           CorretoraRepositorio.InserirCorretora(_nome, _perc);
+           CorretoraRepositorio.InserirCorretora(corretora);
         }
 
         public IList<CorretoraVO> ListarCorretora()
