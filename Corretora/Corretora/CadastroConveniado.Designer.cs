@@ -77,15 +77,16 @@
             this.groupBox2.Size = new System.Drawing.Size(705, 219);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Coveniados Cadastradas";
+            this.groupBox2.Text = "Conveniados Cadastradas";
             // 
             // dtConveniado
             // 
             this.dtConveniado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtConveniado.Location = new System.Drawing.Point(72, 39);
+            this.dtConveniado.Location = new System.Drawing.Point(162, 33);
             this.dtConveniado.Name = "dtConveniado";
-            this.dtConveniado.Size = new System.Drawing.Size(563, 150);
+            this.dtConveniado.Size = new System.Drawing.Size(403, 150);
             this.dtConveniado.TabIndex = 0;
+            this.dtConveniado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtConveniado_CellClick);
             // 
             // btnNovo
             // 
@@ -95,6 +96,7 @@
             this.btnNovo.TabIndex = 10;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnExcluir
             // 
@@ -104,6 +106,7 @@
             this.btnExcluir.TabIndex = 9;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
@@ -123,6 +126,7 @@
             this.btnAlterar.TabIndex = 7;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnSair
             // 
@@ -132,6 +136,7 @@
             this.btnSair.TabIndex = 6;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // cbCorretora
             // 
@@ -156,9 +161,11 @@
             // mkNascimento
             // 
             this.mkNascimento.Location = new System.Drawing.Point(123, 76);
+            this.mkNascimento.Mask = "00/00/0000";
             this.mkNascimento.Name = "mkNascimento";
             this.mkNascimento.Size = new System.Drawing.Size(100, 20);
             this.mkNascimento.TabIndex = 3;
+            this.mkNascimento.ValidatingType = typeof(System.DateTime);
             // 
             // label2
             // 
@@ -198,7 +205,6 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "CadastroConveniado";
             this.Text = "SysCor";
-            this.Load += new System.EventHandler(this.CadastroConveniado_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

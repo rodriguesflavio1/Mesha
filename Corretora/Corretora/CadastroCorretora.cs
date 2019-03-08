@@ -39,8 +39,8 @@ namespace SisCorApresentacao
                 {
                     corretora.Nome = txtNome.Text;
                     corretora.Percentual = Convert.ToDouble(txtperc.Text);
-                    cad.InserirCorretora(corretora.Nome, corretora.Percentual);//Metodo de persistencia no banco
-
+                    cad.InserirCorretora(corretora);//Metodo de persistencia no banco
+                    
                     MessageBox.Show("Cadastro realizado com Sucesso!");
 
                     txtNome.Clear();
@@ -136,7 +136,7 @@ namespace SisCorApresentacao
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             DialogResult result3 = MessageBox.Show("Deseja realmente apagar esse registro?",
-             "ATenção",
+             "Atenção",
              MessageBoxButtons.YesNo,
              MessageBoxIcon.Question,
              MessageBoxDefaultButton.Button2);
